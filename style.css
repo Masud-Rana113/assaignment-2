@@ -1,0 +1,186 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #111111, hsl(0, 0%, 14%), #111111);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5%;
+}
+
+nav h3 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #e6533c;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 2.2rem;
+  padding: 0 1rem 0 0;
+  height: 2.9rem;
+}
+
+nav li:first-of-type {
+  background-color: #e6533c;
+  border-radius: 2.2rem;
+  width: 6.5rem;
+  height: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+/* banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+}
+
+.banner-details {
+  width: 40%;
+}
+
+.banner-details h1 {
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+}
+
+.banner-details h1 span {
+  font-size: 8rem;
+  font-weight: 300;
+  color: white;
+  font-family: "Bonheur Royale", cursive;
+}
+
+.banner-details button {
+  height: 3.2rem;
+  width: 12rem;
+  border-radius: 2.2rem;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-right: 1rem;
+}
+
+.banner-details button:first-of-type {
+  background-color: #e6533c;
+  border: none;
+}
+
+.banner-vidual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  position: relative;
+}
+
+.banner-vidual img {
+  width: 70%;
+}
+
+.banner-vidual .five,
+.banner-vidual .three {
+  width: 193px;
+  height: 98px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  position: absolute;
+}
+
+.banner-vidual .five {
+  top: 21%;
+  right: 8%;
+}
+
+.banner-vidual .three {
+  bottom: 10%;
+  left: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three .dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6533c;
+  margin-right: 1rem;
+}
+
+.five h4,
+.three h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: start;
+}
+
+.inter-14 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+  margin: 1rem 0;
+}
