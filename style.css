@@ -51,6 +51,9 @@ nav h3 {
   font-size: 2.2rem;
   color: #e6533c;
 }
+.mobile {
+  display: none;
+}
 
 nav ul {
   list-style: none;
@@ -684,4 +687,125 @@ hr {
   text-align: center;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
+}
+/* Responsive styles for Mobile L (up to 425px) */
+@media screen and (max-width: 425px) {
+  nav {
+    flex-direction: flex;
+
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-details,
+  .banner-vidual {
+    width: 100%;
+  }
+  .banner-details {
+    text-align: start;
+  }
+
+  .banner-details h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .banner-details h1 span {
+    font-size: 70px;
+  }
+
+  .banner-details button {
+    height: 2.2rem;
+    width: 8rem;
+  }
+  .banner-vidual .five,
+  .banner-vidual .three {
+    width: 145px;
+    height: 74px;
+  }
+  .banner-vidual .five p,
+  .banner-vidual .three p {
+    font-size: 10px;
+  }
+
+  .habit-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .run-section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .run-detail,
+  .run-section img {
+    width: 100%;
+  }
+  .run-detail h2 {
+    font-size: 30px;
+  }
+  .run-detail button {
+    height: 2.2rem;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .training-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .training-cards > div {
+    width: 100%;
+    height: 200px;
+  }
+
+  .bmi-calculator {
+    flex-direction: column;
+  }
+
+  .bmi-chart table {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  form input,
+  form select {
+    width: 49%;
+  }
+
+  .team-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links div {
+    margin-bottom: 1rem;
+  }
+  .computer {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile div {
+    width: 1.4rem;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+  }
 }
